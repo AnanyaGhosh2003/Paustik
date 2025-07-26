@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="image/logo.jpg" alt="Paustik " />
+      <h1>Paustik</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="category.html">Category</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="image/wp.jpg" alt="Onam Banner" class="hero-image"/>
+    <div class="overlay">
+      <h1>Food-The heart of every life</h1>
+      <p>Step into the spirit of Jane with our exclusive festive outfit</p> <br> <br>
+      <a href="category.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Jaggery Collection Countdown -->
+  <section class="collection" id="collection">
+    <div class="content">
+      <h2>Jaggery Collection</h2>
+      <p>Explore our exclusive Jaggery collection, thoughtfully curated to bring elegance and tradition together for this festive season.</p>
+    </div>
+    <div class="countdown">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Minutes</small></div>
+      <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+    <!-- <a href="#" class="btn dark">Shop Onam Collection</a> -->
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <!-- <button id="scrollToTopBtn">&#8679;</button> -->
+
+
+
+
+
+
+   <section class="collections">
+    <div class="collection-card">
+      <img src="image/image1.jpg" alt="cookies Specials" />
+      <div class="btn"> Jaggery Cookies</div>
+    </div>
+    <div class="collection-card">
+      <img src="image/image2.jpg" alt="Jaggery" />
+      <div class="btn">Vermicelli</div>
+    </div>
+    <div class="collection-card">
+      <img src="image/image7.jpg" alt="Jaggery" />
+      <div class="btn">Tetox Blue Tea</div>
+    </div>
+    <div class="collection-card">
+      <img src="image/image3.jpg" alt="Jaggery" />
+      <div class="btn"> Jaggery Powder </div>
+    </div>
+    <div class="collection-card">
+      <img src="image/image4.jpg" alt="Jaggery" />
+      <div class="btn"> Jaggery Cube </div>
+    </div>
+  </section>
+
+
+  <section class="product-section">
+    <h2>Exquisite Collections,  For You</h2>
+    <!-- <p class="subheading">Discover Timeless Styles That Blend Tradition And Modern Elegance, Crafted To Elevate Every Occasion.</p> -->
+
+    <div class="carousel">
+      <div class="arrow left" onclick="scrollLeft()">&#8592;</div>
+
+      <div class="product-container" id="productContainer">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <span class="discount">10%</span>
+          <img src="image/image1.jpg" alt="Manjari Blossom" />
+          <h3>Poustik Foodz Whole Wheat Jaggery Cookies 100% jaggery (100g) </h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 90.00 <span>Rs. 100.00</span></p>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <span class="discount">21%</span>
+          <img src="image/image2.jpg" alt="Padmam Grace" />
+          <h3>Vermicelli Non Stick And Non Lumpy</h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 78.21 <span>Rs. 99.00</span></p>
+        </div>
+
+        
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <span class="discount">23%</span>
+          <img src="image/image3.jpg" alt="Gajam Strength" />
+          <h3>Paustik Foodz Jaggery Powder (500g)</h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 69.30 <span>Rs. 90.00</span></p>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <span class="discount">10%</span>
+          <img src="image/image7.jpg" alt="Gajam Strength" />
+          <h3>Tetox Blue Tea Butterfly pea flower 100% Natural Caffeine Free(100g)</h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 180.00 <span>Rs. 200.00</span></p>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+          <span class="discount">23%</span>
+          <img src="image/image4.jpg" alt="Tharam Legacy" />
+          <h3> Paustik Foodz Jaggery Cube(750g) </h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 154.00 <span>Rs. 200.00</span></p>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+          <span class="discount">10%</span>
+          <img src="image/image5.jpg" alt="Poonthanam Beauty" />
+          <h3>Poustik Foodz Ragi Jaggery Cookies 100% jaggery (100g)</h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 90.00 <span>Rs. 100.00</span></p>
+        </div>
+      </div>
+
+      <!-- Product Card 6
+        <div class="product-card">
+          <span class="discount">15%</span>
+          <img src="image/image6.jpg" alt="Tharam Legacy" />
+          <h3> Poustik Foodz Ragi Jaggery Cookies 100% jaggery (100g) & Poustik Foodz Whole Wheat Jaggery Cookies 100% jaggery (100g)</h3>
+          <button class="add-to-bag">Add To Bag 👜</button>
+          <p class="price">Rs. 170.00 <span>Rs. 200.00</span></p>
+        </div> -->
+
+      <div class="arrow right" onclick="scrollRight()">&#8594;</div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+
+
+ 
+ <!-- Footer Section -->
+  <footer>
+    <div class="footer-column"></div>
+    <h2>Paustik Jaggery</h2>
+    <p>Food-The heart of every life</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="category.html">Categorys</a>
+      <a href="contact.html">Contact</a>
+   </div>
+
+   <div class="footer-bottom">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+    </div>
+
+    <p class="footer-note">&copy; 2025 Paustik Jaggery. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paustik Jaggery - Header</title>
+  <link href="category.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="image/logo.jpg" alt="Paustik " />
+      <h1>Paustik</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="category.html">Category</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Search bar -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search categories..."
+      aria-label="Search categories"
+    />
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar" role="group" aria-label="Filter categories">
+      <button class="active" onclick="filterCards('all')">All</button>
+      <button onclick="filterCards('powder')">Powder</button>
+      <button onclick="filterCards('cubes')">Cubes</button>
+      <button onclick="filterCards('cookies')">cookies</button>
+      <button onclick="filterCards('vermicelli')">Vermicelli</button>
+      <button onclick="filterCards('Tetox Blue Tea')">Tea</button>
+    </div>
+
+
+<!-- Category cards -->
+    <div class="category-grid" id="categoryGrid">
+
+      <article class="category-card" data-category="powder" role="region" aria-label="Jaggery Powder category">
+        <img src="image/image3.jpg" alt="Jaggery Powder" loading="lazy" />
+        <div class="card-content">
+          <h3>Jaggery Powder</h3>
+          <div class="subpoint">Jaggery - Natural Powder</div>
+          <p>Finely ground pure jaggery, ideal for sweetening tea and cooking.</p>
+          <a href="products.html?category=powder" class="shop-btn" aria-label="Shop Jaggery Powder products">Shop Powder</a>
+        </div>
+      </article>
+
+      <article class="category-card" data-category="cubes" role="region" aria-label="Jaggery Cubes category">
+        <img src="image/image4.jpg" alt="Jaggery Cubes" loading="lazy" />
+        <div class="card-content">
+          <h3>Jaggery Cubes</h3>
+          <div class="subpoint">Jaggery - Traditional Cubes</div>
+          <p>Solid cubes of pure jaggery, rich in flavor and nutrients.</p>
+          <a href="products.html?category=cubes" class="shop-btn" aria-label="Shop Jaggery Cubes products">Shop Cubes</a>
+        </div>
+      </article>
+
+      <article class="category-card" data-category="cookies" role="region" aria-label="cookies category">
+        <img src="image/image1.jpg" alt="Cookie" loading="lazy" />
+        <div class="card-content">
+          <h3> Jaggery Cookies</h3>
+          <div class="subpoint">Jaggery - Cookies</div>
+          <p>Whole Wheat Jaggery Cookies.</p>
+          <a href="products.html?category=cookies" class="shop-btn" aria-label="Shop cookies products">Shop Cookies</a>
+        </div>
+      </article>
+      <article class="category-card" data-category="cookies" role="region" aria-label="cookies category">
+        <img src="image/image6.jpg" alt="Cookie" loading="lazy" />
+        <div class="card-content">
+          <h3> Jaggery Cookies</h3>
+          <div class="subpoint">Jaggery - Cookies</div>
+          <p>Whole Wheat Jaggery Cookies.</p>
+          <a href="products.html?category=cookies" class="shop-btn" aria-label="Shop cookies products">Shop Cookies</a>
+        </div>
+      </article>
+
+       <article class="category-card" data-category="vermicelli" role="region" aria-label="vermicelli category">
+        <img src="image/image2.jpg" alt="vermicelli" loading="lazy" />
+        <div class="card-content">
+          <h3> Jaggery Vermicelli</h3>
+          <div class="subpoint">Jaggery - vermicelli</div>
+          <p>Non Sticky And Non Lumpy.</p>
+          <a href="products.html?category=cookies" class="shop-btn" aria-label="Shop cookies products">Shop Vermicelli</a>
+        </div>
+      </article>
+
+      <article class="category-card" data-category="Tea" role="region" aria-label="Tea category">
+        <img src="image/image7.jpg" alt="Tetox Blue Tea" loading="lazy" />
+        <div class="card-content">
+          <h3>Jaggery Cubes</h3>
+          <div class="subpoint">Tetox Blue Tea</div>
+          <p>Tetox Blue Tea Butterfly pea flower 100% Natural Caffeine Free</p>
+          <a href="products.html?category=cubes" class="shop-btn" aria-label="Shop Jaggery Cubes products">Shop Tea</a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+ 
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-column"></div>
+    <h2>Paustik Jaggery</h2>
+    <p class="p">Food-The heart of every life.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="category.html">Categorys</a>
+      <a href="contact.html">Contact</a>
+   </div>
+
+   <div class="footer-bottom">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+    </div>
+
+    <p class="footer-note">&copy; 2025 Paustik Jaggery. All rights reserved.</p>
+  </footer>
+
+  <!-- Scriptr -->
+<script>
+    // Cookie helpers
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+    }
+    function getCookie(name) {
+      const nameEQ = name + "=";
+      const ca = document.cookie.split(';');
+      for (let c of ca) {
+        c = c.trim();
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+      }
+      return null;
+    }
+
+    // Filter cards by category
+    function filterCards(category) {
+      const buttons = document.querySelectorAll('.filter-bar button');
+      const cards = document.querySelectorAll('.category-card');
+
+      // Save selection in cookie for 7 days
+      setCookie('selectedCategory', category, 7);
+
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === category) {
+          btn.classList.add('active');
+        }
+        if (category === 'all') {
+          buttons[0].classList.add('active');
+        }
+      });
+
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        card.style.display = (category === 'all' || cat === category) ? 'flex' : 'none';
+      });
+
+      // Clear search input when filtering by button
+      document.getElementById('searchInput').value = '';
+    }
+
+    // Search input filtering
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase();
+      const cards = document.querySelectorAll('.category-card');
+      // Remove active from filter buttons when typing
+      document.querySelectorAll('.filter-bar button').forEach(btn => btn.classList.remove('active'));
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(searchTerm) ? 'flex' : 'none';
+      });
+    });
+
+    // On page load, restore selected filter from cookie or default to 'all'
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedCategory = getCookie('selectedCategory') || 'all';
+      filterCards(savedCategory);
+    });
+  </script>
+
+</body>
+</html>
